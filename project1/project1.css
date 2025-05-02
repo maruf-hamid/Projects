@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(0, 14%, 15%);
+}
+
+.navbar{
+    margin:0;
+    padding:0 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar .logo{
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 700;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li{
+    margin-left: 50px;
+}
+
+.navbar ul li a{
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.navbar ul li a:hover, .home{
+    color: hsl(120, 32%, 37%);
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    color: whitesmoke;
+    padding: 40px 9% 0;
+}
