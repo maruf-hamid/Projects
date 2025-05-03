@@ -3,9 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+:root{
+    --green:  hsla(120, 64%, 46%, 0.801);
+}
 body{
-    background-color: hsl(0, 14%, 15%);
+    background-color: hsl(0, 11%, 15%);
 }
 
 .navbar{
@@ -25,6 +27,8 @@ a{
     padding: 20px;
     font-size: 30px;
     font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(231, 40, 173)
 }
 .navbar ul{
     display: flex;
@@ -42,13 +46,103 @@ a{
 }
 
 .navbar ul li a:hover, .home{
-    color: hsl(120, 32%, 37%);
+    color: var(--green);
 }
 
 .content{
     display: flex;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     color: whitesmoke;
-    padding: 40px 9% 0;
+    padding: 9rem 9% 0;
+}
+
+.content-info h1{
+    font-size: 50px;
+
+}
+
+.content-info h2{
+    font-size: 28px;
+    margin-top: -5px;
+}
+
+.content-info h2 span{
+    display: inline-block;
+    color:transparent;
+    -webkit-text-stroke: 0.7px var(--green);
+    text-shadow: 0 0 5px var(--green);
+
+}
+.content-info p{
+    font-size: 16px;
+    margin: 10px 0 25px;
+}
+
+.btn-sci{
+    display: flex;
+    align-items: center;
+}
+
+.btn-sci .btn{
+    display: inline-block;
+    background-color: var(--green);
+    border: 2px solid var(--green);
+    border-radius: 20px;
+    box-shadow: 0 0 10px var(--green);
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: hsl(0, 71%, 1%) ;
+    transition: 0.5s;
+}
+
+.btn-sci .btn:hover{
+    background-color: transparent ;
+    color: var(--green);
+    box-shadow: none;
+}
+
+.btn-sci .sci{
+    margin-left: 20px;
+}
+
+
+.btn-sci .sci a{
+    border: 2px solid var(--green);
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 20px;
+    color: var(--green);
+    margin:0 5px;
+    transition: 0.5s;
+}
+
+.btn-sci .sci a:hover{
+    background-color: var(--green) ;
+    color: whitesmoke;
+    box-shadow: 0 0 10px var(--green);
+}
+.pic{
+    height: 25vw;
+    width: 600px;
+    background-color: transparent;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    border: 2px solid var(--green);
+    
+}
+
+.pic img{
+    position: absolute;
+    display: block;
+    width:115%;
+    object-fit: cover;
+    padding-left: 12px;
+    mix-blend-mode: lighten;
 }
